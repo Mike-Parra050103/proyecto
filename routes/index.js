@@ -1,4 +1,5 @@
 const express = require('express');
+const landingPage = require('.landingPage');
 const login = require('./login');
 const register = require('./register');
 const map = require('./map');
@@ -9,6 +10,7 @@ function routerApi(app)
 {
 	const router = express.Router();
 	app.use('/api/v1', router);
+	router.use('/', landingPage)
 	router.use('/login', login);
 	router.use('/register', register);
 	router.use('/map', map);
