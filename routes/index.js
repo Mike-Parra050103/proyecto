@@ -1,5 +1,5 @@
 const express = require('express');
-const landingPage = require('.landingPage');
+const landingPage = require('./landingPage');
 const login = require('./login');
 const register = require('./register');
 const map = require('./map');
